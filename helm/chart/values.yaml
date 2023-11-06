@@ -1,0 +1,3 @@
+fullnameOverride: test3
+image:
+  repository: quay.io/rbaumgar/monitor-demo-app-jvm

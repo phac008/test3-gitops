@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test3
+  namespace: suxess-it-dev
+  labels:
+    app: test3
+    backstage.io/kubernetes-id: test3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test3
+  template:
+    metadata:
+      labels:
+        app: test3
+        backstage.io/kubernetes-id: test3
+    spec:
+      containers:
+#      - image: quay.io/rbaumgar/monitor-demo-app-jvm
+      - image: quay.io/rbaumgar/monitor-demo-app-jvm
+        imagePullPolicy: Always
+        name: test3

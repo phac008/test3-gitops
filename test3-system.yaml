@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: test3
+  description: test3
+  labels:
+    environments: dev
+spec:
+  owner: user:default/nikolaus.larcher
